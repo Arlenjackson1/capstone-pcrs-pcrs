@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --mainColor: #060000;
+  --mainColorLight: #5a5a5a;
+  --secondaryColor: #c90101;
+  --textColor: #eee;
+  --secondaryTextColor: var(--mainColor);
+}
+
+.page-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+
+.chat-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 20%; /* Adjusted to make room for the sidebar */
+  margin: auto;
+  width: 80%;
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+  padding: 10px;
+}
+.prompt-box {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  flex-grow: 1;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px; /* Push the form to the bottom */
+}
+
+input {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+button {
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+}
+
+.response {
+  padding: 10px;
+  background-color: #fff;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.user-message {
+  background-color: #e6e6e6;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 50%;
+  color: var(--mainColor);
+}
+
+.bot-message {
+  margin-bottom: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 50%;
+}
