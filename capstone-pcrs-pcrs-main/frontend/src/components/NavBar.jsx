@@ -7,19 +7,25 @@ const NavBar = () => {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "flex-start",
-    background:
-      "linear-gradient(to right, black, purple, red ,orange, yellow, orange, red, purple, black)",
-    height: "7%",
     position: "fixed",
     width: "100vw",
     top: 10,
     zIndex: 1000,
+    back,
+  };
+  const navBtn = {
+    textDecoration: "none",
+    color: "white",
+    padding: "10px 20px",
+    borderRadius: "5px",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+    transition: "background-color 0.3s, transform 0.1s",
   };
   return (
     <div style={navBarContainer}>
       <header>
         <nav>
-          <Link to="#" className="nav-btn">
+          <Link to="#" style={navBtn}>
             {" "}
             Home
           </Link>
